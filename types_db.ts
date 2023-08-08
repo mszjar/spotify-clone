@@ -140,7 +140,7 @@ export interface Database {
       }
       songs: {
         Row: {
-          " title": string | null
+          title: string | null
           author: string | null
           created_at: string | null
           id: number
@@ -149,7 +149,7 @@ export interface Database {
           user_id: string | null
         }
         Insert: {
-          " title"?: string | null
+          title?: string | null
           author?: string | null
           created_at?: string | null
           id?: number
@@ -158,7 +158,7 @@ export interface Database {
           user_id?: string | null
         }
         Update: {
-          " title"?: string | null
+          title?: string | null
           author?: string | null
           created_at?: string | null
           id?: number
