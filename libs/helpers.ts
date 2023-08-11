@@ -3,7 +3,7 @@ import { Price } from "@/types";
 export const getURL = () => {
   let url =
     process.env.NEXT_PUBLIC_SITE_URL ??
-    process.env.NEXT_PUBLIC_VERCEL_URL ??
+    // process.env.NEXT_PUBLIC_VERCEL_URL ?? // TODO: try do delete this and localhost:3000 to fix stripe checkout.
     'http://localhost:3000';
 
   url = url.includes('http') ? url : `https://${url}`;
